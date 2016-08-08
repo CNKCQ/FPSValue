@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FPSValue"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "show FPS value on window."
 
   # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                   it's a view for show FPS value on the window
                    DESC
 
-  s.homepage     = "https://github.com/CNKCQ/FPSStatus.git"
+  s.homepage     = "https://github.com/CNKCQ/FPSValue.git"
   s.screenshots  = "https://cloud.githubusercontent.com/assets/8440220/17470727/2bcc7ab8-5d71-11e6-999e-e68875652c6f.png"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/CNKCQ/FPSStatus.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/CNKCQ/FPSValue.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "FPSStatus", "FPSStatus/**/*.{h,m,swift}"
-  s.exclude_files = "FPSStatus/Exclude"
+  s.source_files  = "FPSValue", "FPSValue/**/*.{h,m,swift}"
+  # s.exclude_files = "FPSValue/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -107,9 +107,9 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
-  s.resource_bundles = {
-  'FPSStatus' => ['FPSStatus/Resources/**/*.png']
-}
+#   s.resource_bundles = {
+#   'FPSStatus' => ['FPSValue/Resources/**/*.png']
+# }
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
