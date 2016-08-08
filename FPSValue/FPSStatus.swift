@@ -58,7 +58,7 @@ public class FPSStatus {
         }
     }
 
-    func open() {
+    public func open() {
         let rootVCSubviews = UIApplication.sharedApplication().delegate?.window!!.rootViewController!.view.subviews
         for label in rootVCSubviews! {
             if label.isKindOfClass(UILabel) && label.tag == 102 {
@@ -74,7 +74,7 @@ public class FPSStatus {
         fpsValue = newFpsValue
     }
 
-    func close() {
+    public func close() {
         displayLink?.paused = true
             let rootVCSubviews = UIApplication.sharedApplication().delegate?.window!!.rootViewController!.view.subviews
         for label in rootVCSubviews! {
