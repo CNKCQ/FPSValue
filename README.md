@@ -1,4 +1,4 @@
-# FPSStatus
+# FPSValue
 show FPS value on window
 
 ##### :eyes: See also:
@@ -10,8 +10,29 @@ show FPS value on window
 ```bash
 $ gem install cocoapods
 ```
+> CocoaPods 0.39.0+ is required to build FPSValue.
 
-> CocoaPods 0.39.0+ is required to build FPSStatus 3.0.0+.
+To integrate FPSValue into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
-To integrate FPSStatus into your Xcode project using CocoaPods, specify it in your `Podfile`:
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
 
+target '<Your Target Name>' do
+    pod 'FPSValue', '~> 1.0.1'
+end
+```
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+## :book: Usage
+  ``` bash
+  FPSStatus.shareInstance.open()
+  ```
+Language|platform|tool
+---|----|---
+Swift 2.2|>=iOS 8.0|Xcode 7.3.1
